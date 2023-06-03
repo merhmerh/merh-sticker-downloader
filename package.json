@@ -2,12 +2,23 @@
   "name": "merh-sticker-downloader",
   "version": "1.0.0",
   "description": "",
-  "main": "mds.mjs",
+  "main": "index.mjs",
   "type": "module",
+  "bin": {
+    "msd": "./index.mjs"
+  },
   "scripts": {
+    "start": "node mds.mjs",
+    "med": "node med.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "merhmerh",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "inquirer": "^9.2.6",
+    "ora": "^6.3.1",
+    "puppeteer": "^20.3.0"
+  }
 }
